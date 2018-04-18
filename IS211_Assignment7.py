@@ -1,3 +1,8 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+"""Creating a game of pig"""
+
+
 import random
 
 
@@ -21,6 +26,8 @@ class Game(object):
         self.current_player = self.player1
 
     def next_turn(self):
+        """next_turn accepts user input and performs game actions."""
+
         print('{} score is: {}'.format(self.current_player.name, self.current_player.score))
         # current player must choose roll or hold
         choice = 'pig'
